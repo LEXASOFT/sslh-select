@@ -10,7 +10,7 @@ Usage
 
 Start and expose 443
 ```bash
-   docker run -d -p 443:443 --name sslh xupaddy/sslh
+   docker run -d -p 443:443 --name sslh xupaddy/sslh-select
 ```
 
 Enviroment variables for manipulating container. Names are self explonatory, I hope.
@@ -23,6 +23,9 @@ SSH_PORT 22
 
 OPENVPN_HOST localhost
 OPENVPN_PORT 1194
+
+HTTP_HOST localhost
+HTTP_PORT 8080
 
 HTTPS_HOST localhost
 HTTPS_PORT 8443
