@@ -1,4 +1,4 @@
-sslh-hub
+sslh-select
 ========
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/shaddysignal/sslh-hub.svg)](https://hub.docker.com/r/shaddysignal/sslh-hub/)
@@ -10,7 +10,7 @@ Usage
 
 Start and expose 443
 ```bash
-   docker run -d -p 443:443 --name sslh-hub shaddysignal/sslh-hub
+   docker run -d -p 443:443 --name sslh xupaddy/sslh
 ```
 
 Enviroment variables for manipulating container. Names are self explonatory, I hope.
@@ -27,8 +27,8 @@ OPENVPN_PORT 1194
 HTTPS_HOST localhost
 HTTPS_PORT 8443
 
-SHADOWSOCKS_HOST localhost
-SHADOWSOCKS_PORT 8388
+OTHER_HOST localhost
+OTHER_PORT 8388
 ```
 
 ----
