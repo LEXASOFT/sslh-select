@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sslh-select -f -u root --listen $LISTEN_IP:$LISTEN_PORT \
+sslh-select -f -u root --transparent --listen $LISTEN_IP:$LISTEN_PORT \
    --ssh $SSH_HOST:$SSH_PORT \
    --http $HTTP_HOST:$HTTP_PORT \
    --tls $HTTPS_HOST:$HTTPS_PORT \
